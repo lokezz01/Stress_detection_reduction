@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food coupon</title>
+
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='couponstyle.css') }}">
+</head>
+<body>
+  <div class="container">
+      <div class="coupon-card">
+          <img src={{ url_for('static', filename="logo.png") }} class="logo" />
+          <h3>Take A Break!</h3>
+          <p>We care about you<br> Enjoy the Rs.500 food coupon<br> Stay Happy and Peaceful!</p>
+          <div class="coupon-row">
+              <span id="cpnCode">STEALQWA39</span>
+              <span id="cpnBtn">COPY CODE</span>
+              <div class="circle1"></div>
+              <div class="circle2"></div>
+          </div>
+      </div>
+  </div>
+  <script>
+      var cpnBtn=document.getElementById("cpnBtn");
+      var cpnCode=document.getElementById("cpnCode");
+      cpnBtn.onclick=function(){
+          navigator.clipboard.writeText(cpnCode.innerHTML);
+          cpnBtn.innerHTML="COPIED";
+          setTimeout(function(){
+              cpnBtn.innerHTML="COPY CODE"
+          },2000);
+      }   
+  </script>  
+</body>
+</html>

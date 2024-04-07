@@ -1,0 +1,10 @@
+-snap
+-table alternation
+-spaces and errors
+performance analysis
+elobration for mini exception
+-6.conc
+
+
+paper: 
+https://easychair.org/conferences/submission_uploaded?a=28518184;files=1;submission=5956070;track=286304

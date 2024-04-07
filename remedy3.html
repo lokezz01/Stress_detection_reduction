@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Have Some Fun</title>
+  
+  <script>
+	function openInNewTab(url) {
+		var win = window.open(url, '_blank');
+		win.focus();
+		setTimeout(function() {win.close();}, 60000);
+}
+</script>
+</head>
+<body onload=openInNewTab("https://www.youtube.com/")>
+<img src={{url_for('static',filename="take-a-break.jpg")}} /> 
+	
+	
+</body>
+</html>

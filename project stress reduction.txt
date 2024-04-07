@@ -1,0 +1,4 @@
+stress reduction:-
+1. https://github.com/Geek-ubaid/Stress-Detection
+2. https://github.com/surekhacdk/Stress_Detection
+brain tumour:- https://github.com/shalabh147/Brain-Tumor-Segmentation-and-Survival-Prediction-using-Deep-Neural-Networks

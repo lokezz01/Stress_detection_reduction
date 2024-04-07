@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  <title>Upload File</title>
+</head>
+
+<body>
+    <h1>STRESS TRACKER</h1>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+	  
+    </form>
+	<br></br>
+	<br></br>
+	<br></br>
+	
+	<form action="/detectlive/" method="post">
+	<button class="button" name="startdetect" type="submit">Detect Stress</button>
+	</form>
+	  
+	
+	
+</body>
+</html>

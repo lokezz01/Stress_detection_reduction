@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  <title>Result</title>
+</head>
+<body>
+    <h1>STRESS TRACKER</h1>
+   
+	<img src="{{ url_for('video_feed') }}"width="1200" height="700" alt="Process started">
+	<br><br>
+	<form action="/form/" method="post">
+	<button class="button" name="surveyBtn" type="submit">TAKE SURVEY</button>
+	</form>
+	
+	<br></br>
+	<form action="/terminate/" method="post">
+	<button class="button" name="stopBtn" type="submit">Terminate</button>
+	</form>
+	 
+	
+	
+
+
+	
+</body>
+</html>
